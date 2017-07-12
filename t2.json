@@ -18,6 +18,6 @@
     {"name": "PGID", "label": "", "set": ""},
     {"name": "VIRTUAL_HOST", "label": "", "set": ""},
     {"name": "VIRTUAL_PORT", "label": "", "set": ""},
-    {"name": "HOSTNAME", "type": "container", "label": "Hostname", "set": "nextcloud.pknw1.co.uk"}
   ]
 }
+]
