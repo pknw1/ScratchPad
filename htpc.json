@@ -1,0 +1,66 @@
+
+
+[
+  {
+  "title": "Nextcloud",
+  "description": "Fileserver Interface",
+  "note": "Map <b>/host</b> as RO to Host system root (/)<br> Map <b>/var/www/html</b> to /home/docker/nextcloud<br> set <b>PUID = 115</b> and <b>PGID=121</b><br>",
+  "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
+  "image": "nextcloud:latest",
+  "platform": "linux",
+  "ports": [ "80/tcp" ],
+  "restart_policy": "always",
+  "categories": ["webserver", "file-sharing"],
+  "privileged": true,
+  "volumes": ["/host", "/var/www/html"],
+  "env": [
+    {"name": "PUID", "label": "PUID"},
+    {"name": "PGID", "label": "PGID"},
+    {"name": "VIRTUAL_HOST", "label": "Virtual Host for Proxy"},
+    {"name": "VIRTUAL_PORT", "label": "Mapped Port for Proxy"},
+    {"name": "HOSTNAME", "label": "Hostname"}
+  ]
+},
+{
+"title": "Plex",
+"description": "Media Server Container",
+"note": "Map <b>/host</b> as RO to Host system root (/)<br> Map <b>/var/www/html</b> to /home/docker/nextcloud<br> set <b>PUID = 115</b> and <b>PGID=121</b><br>",
+"logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
+"image": "plexinc/pms-docker",
+"platform": "linux",
+"ports": [ "32400/tcp", "3005/tcp", "8324/tcp", "32469/tcp", "1900/udp", "32410/udp", "32412/udp", "32413/udp", "32414/udp" ],
+"restart_policy": "always",
+"categories": ["Media Server"],
+"privileged": true,
+"volumes": ["/config", "/data", "/transcode"],
+"env": [
+  {"name": "PUID", "label": "PUID"},
+  {"name": "PGID", "label": "PGID"},
+  {"name": "VIRTUAL_HOST", "label": "Virtual Host for Proxy"},
+  {"name": "VIRTUAL_PORT", "label": "Mapped Port for Proxy"},
+  {"name": "PLEX_CLAIM", "label": "ClaimID from https://www.plex.tv/claim/"},
+  {"name": "ADVERTISE_IP", "label": "Enter as http://<hostIPAddress>:<mapped port to 32400>/"},
+  {"name": "HOSTNAME", "label": "Hostname"}
+]
+},
+{
+"title": "HTPC Manager",
+"description": "Main plex.pknw1.co.uk interface",
+"note": "<br> set <b>PUID = 115</b> and <b>PGID=121</b><br>",
+"logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
+"image": "linuxserver/htpcmanager",
+"platform": "linux",
+"ports": [ "8085/tcp" ],
+"restart_policy": "always",
+"categories": ["Web Interfacer"],
+"privileged": true,
+"volumes": ["/config", "/host"],
+"env": [
+  {"name": "PUID", "label": "PUID"},
+  {"name": "PGID", "label": "PGID"},
+  {"name": "VIRTUAL_HOST", "label": "Virtual Host for Proxy"},
+  {"name": "VIRTUAL_PORT", "label": "Mapped Port for Proxy", "set": "8085"},
+  {"name": "HOSTNAME", "label": "Hostname"}
+]
+}
+]
