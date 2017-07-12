@@ -14,7 +14,7 @@
   "privileged": true,
   "volumes": ["/host", "/var/www/html"],
   "env": [
-    {"name": "PUID", "label": "PUID"},
+    {"name": "PUID", "label": "PUID", "set": "115"},
     {"name": "VIRTUAL_HOST", "label": "Virtual Host"}
   ]
 }
