@@ -19,8 +19,7 @@
     {"name": "VIRTUAL_HOST", "label": "Virtual Host", "set": "owncloud1.pknw1.co.uk"},
     {"name": "VIRTUAL_PORT", "label": "Virtual Port", "set": "12380"},
     {"name": "HOSTNAME", "type": "container", "label": "Hostname", "set": "nextcloud.pknw1.co.uk"}
-  ]
-},
+  ],
  "network": "bridged"
-}
-]
+  }
+ ]
