@@ -1,4 +1,5 @@
-{
+[
+  {
   "title": "Nextcloud",
   "description": "Fileserver Interface",
   "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
@@ -11,3 +12,4 @@
    "privileged": true,
    "volumes": ["/host", "/var/www/html"]
 }
+]
