@@ -10,7 +10,7 @@
   ],
   "restart_policy": "always",
   "categories": ["webserver", "file-sharing"],
-  "privileged": "true",
+  "privileged": true,
   "volumes": ["/host", "/var/www/html"]
 }
 ]
