@@ -15,9 +15,6 @@
   "volumes": ["/host", "/var/www/html"],
   "env": [
     {"name": "PUID", "type": "container", "label": "PUID", "set": "115"},
-    {"name": "PGID", "label": "", "set": ""},
-    {"name": "VIRTUAL_HOST", "label": "", "set": ""},
-    {"name": "VIRTUAL_PORT", "label": "", "set": ""},
     {"name": "TEST", "type": "container", "label": "LABEL", "set": "SET"}
   ]
 }
