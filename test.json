@@ -15,10 +15,12 @@
    "note": "notes",
   "env": [
     {"name": "PUID", "type": "container", "label": "PUID", "set": "115"},
-    {"name": "PGID", "label": "", "set": ""},
-    {"name": "VIRTUAL_HOST", "label": "", "set": ""},
-    {"name": "VIRTUAL_PORT", "label": "", "set": ""},
+    {"name": "PGID", "label": "PGID", "set": "121"},
+    {"name": "VIRTUAL_HOST", "label": "Virtual Host", "set": "owncloud1.pknw1.co.uk"},
+    {"name": "VIRTUAL_PORT", "label": "Virtual Port", "set": "12380"},
     {"name": "HOSTNAME", "type": "container", "label": "Hostname", "set": "nextcloud.pknw1.co.uk"}
   ]
+},
+ "network": "bridged"
 }
 ]
