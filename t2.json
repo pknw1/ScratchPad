@@ -1,0 +1,23 @@
+[
+  {
+  "title": "Nextcloud",
+  "description": "Fileserver Interface",
+  "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
+  "image": "nextcloud:latest",
+  "platform": "linux",
+  "ports": [
+    "80/tcp"
+  ],
+  "restart_policy": "always",
+  "categories": ["webserver", "file-sharing"],
+  "privileged": true,
+  "volumes": ["/host", "/var/www/html"],
+   "note": "notes",
+  "env": [
+    {"name": "PUID", "label": "", "set": ""},
+    {"name": "PGID", "label": "", "set": ""},
+    {"name": "VIRTUAL_HOST", "label": "", "set": ""},
+    {"name": "VIRTUAL_PORT", "label": "", "set": ""},
+    {"name": "HOSTNAME", "type": "container", "label": "Hostname", "set": "nextcloud.pknw1.co.uk"}
+  ]
+}
