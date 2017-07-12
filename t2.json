@@ -12,12 +12,6 @@
   "categories": ["webserver", "file-sharing"],
   "privileged": true,
   "volumes": ["/host", "/var/www/html"],
-   "note": "notes",
-  "env": [
-    {"name": "PUID", "label": "", "set": ""},
-    {"name": "PGID", "label": "", "set": ""},
-    {"name": "VIRTUAL_HOST", "label": "", "set": ""},
-    {"name": "VIRTUAL_PORT", "label": "", "set": ""}
-  ]
-}
+  "note": "notes"
+  }
 ]
