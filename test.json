@@ -12,9 +12,9 @@
   "categories": ["webserver", "file-sharing"],
   "privileged": true,
   "volumes": ["/host", "/var/www/html"],
-   "note": "notes",
+  "note": "notes",
   "env": [
-    {"name": "PUID", "type": "container", "label": "PUID", "set": "115"},
+    {"name": "PUID", "label": "PUID", "set": "115"},
     {"name": "PGID", "label": "PGID", "set": "121"},
     {"name": "VIRTUAL_HOST", "label": "Virtual Host", "set": "owncloud1.pknw1.co.uk"},
     {"name": "VIRTUAL_PORT", "label": "Virtual Port", "set": "12380"},
