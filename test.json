@@ -4,12 +4,13 @@
   "description": "Fileserver Interface",
   "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
   "image": "nextcloud:latest",
+  "platform": "linux",
   "ports": [
     "80/tcp"
   ],
   "restart_policy": "always",
-   "categories": ["webserver", "file-sharing"],
-   "privileged": true,
-   "volumes": ["/host", "/var/www/html"]
+  "categories": ["webserver", "file-sharing"],
+  "privileged": "true",
+  "volumes": ["/host", "/var/www/html"]
 }
 ]
