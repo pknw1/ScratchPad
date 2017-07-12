@@ -21,4 +21,4 @@
     {"name": "HOSTNAME", "type": "container", "label": "Hostname", "set": "nextcloud.pknw1.co.uk"}
   ]
   }
- ]
+]
