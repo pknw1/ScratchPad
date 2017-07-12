@@ -15,7 +15,7 @@
   "volumes": ["/host", "/var/www/html"],
   "env": [
     {"name": "PUID", "label": "PUID"},
-    {"name": "VIRTUAL_HOST", "type": "container", "label": "Virtual Host"}
+    {"name": "VIRTUAL_HOST", "label": "Virtual Host"}
   ]
 }
 ]
