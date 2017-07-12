@@ -1,0 +1,21 @@
+[
+  {
+  "title": "Nextcloud",
+  "description": "Fileserver Interface",
+  "note": "Notes1 <Br> Notes 2 <BR>",
+  "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
+  "image": "nextcloud:latest",
+  "platform": "linux",
+  "ports": [
+    "80/tcp"
+  ],
+  "restart_policy": "always",
+  "categories": ["webserver", "file-sharing"],
+  "privileged": true,
+  "volumes": ["/host", "/var/www/html"],
+  "env": [
+    {"name": "PUID", "label": "PUID", "set": "115"},
+    {"name": "VIRTUAL_HOST", "label": "Virtual Host"}
+  ]
+}
+]
