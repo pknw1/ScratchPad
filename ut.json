@@ -66,16 +66,16 @@
 "description": "Downloader",
 "note": "Map <b>/host</b> as RO to Host system root (/)<br> Map <b>/logs</b> to Plex Logs<br> set <b>PUID = 115</b> and <b>PGID=121</b><br>",
 "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
-"image": "pknw1/utorrent-server",
+"image": "pknw1/docker-utorrent-1",
 "platform": "linux",
 "ports": [ "8080/tcp" ],
 "restart_policy": "always",
 "categories": ["webserver", "file-sharing"],
 "privileged": true,
-"volumes": ["/config", "/download", "/host"],
+"volumes": ["/settings", "/download", "/host"],
 "env": [
-  {"name": "PUID", "label": "PUID"},
-  {"name": "PGID", "label": "PGID"},
+  {"name": "UTORRENT_UID", "label": "UTORRENT_UID"},
+  {"name": "UTORRENT_GID", "label": "UTORRENT_GID"},
   {"name": "VIRTUAL_HOST", "label": "Virtual Host for Proxy"},
   {"name": "VIRTUAL_PORT", "label": "Mapped Port for Proxy"}
   ]
